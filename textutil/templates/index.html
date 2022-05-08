@@ -1,0 +1,120 @@
+{% extends 'basic.html' %}
+{% block title %}news reading page{% endblock %}
+{% block navbarloginsignup %}
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="login/login">login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="signup/signup">signUp</a>
+        </li>
+    </ul>
+{% endblock %}
+
+{% block body %}
+
+<!--carousel-->
+<div class="container">
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://image.shutterstock.com/image-vector/breaking-news-background-planet-260nw-667420906.jpg" class="d-block w-100" alt="..." height="280">
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.hindustantimes.com/img/2022/04/16/550x309/breaking_news_updates_april_16_2022_1650071669531_1650071669695.jpeg" class="d-block w-100" alt="..." height="280">
+    </div>
+    <div class="carousel-item">
+      <img src="https://saslions.com/wp-content/uploads/2019/09/news.gif" class="d-block w-100" alt="..." height="280">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+</div>
+
+<!-- Card -->
+<div class="container">
+  <div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">{{news1}}</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="login/login" class="btn btn-primary">More</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">{{news2}}</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="login/login" class="btn btn-primary">More</a>
+      </div>
+    </div>
+  </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">{{news3}}</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="login/login" class="btn btn-primary">More</a>
+      </div>
+    </div>
+  </div>
+
+    <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">{{news4}}</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="login/login" class="btn btn-primary">More</a>
+      </div>
+    </div>
+  </div>
+  </div><br>
+  <div class="row">
+    <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">{{news5}}</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="login/login" class="btn btn-primary">More</a>
+      </div>
+    </div>
+  </div>
+    <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">{{news6}}</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="login/login" class="btn btn-primary">More</a>
+      </div>
+    </div>
+  </div>
+</div>
+  <br>
+
+</div>
+{% endblock %}
+
+
+
+
+
+

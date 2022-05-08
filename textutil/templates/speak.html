@@ -1,0 +1,246 @@
+{% extends 'basic.html' %}
+{% block title %}news reading page{% endblock %}
+
+
+{% block body %}
+{% block user %}
+{{email1}}
+{% endblock %}
+<!-- carousel -->
+<div class="container">
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Slide 10"></button>
+  </div>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{{news1}}" class="d-block w-100" height="380" alt="...">
+
+      <h1>{{title1}}</h1>
+      <h5>{{desc1}}</h5>
+    </div>
+
+    <div class="carousel-item">
+      <img src="{{news2}}" class="d-block w-100" height="380" alt="...">
+      <h1>{{title2}}</h1>
+      <h5>{{desc2}}</h5>
+    </div>
+    <div class="carousel-item">
+      <img src="{{news3}}" class="d-block w-100" height="380" alt="...">
+      <h1>{{title3}}</h1>
+      <h5>{{desc3}}</h5>
+    </div>
+    <div class="carousel-item">
+      <img src="{{news4}}" class="d-block w-100" height="380" alt="...">
+      <h1>{{title4}}</h1>
+      <h5>{{desc4}}</h5>
+    </div>
+    <div class="carousel-item">
+      <img src="{{news5}}" class="d-block w-100" height="380" alt="...">
+      <h1>{{title5}}</h1>
+      <h5>{{desc5}}</h5>
+    </div>
+    <div class="carousel-item">
+      <img src="{{news6}}" class="d-block w-100" height="380" alt="...">
+      <h1>{{title6}}</h1>
+      <h5>{{desc6}}</h5>
+    </div>
+    <div class="carousel-item">
+      <img src="{{news7}}" class="d-block w-100" height="380" alt="...">
+      <h1>{{title7}}</h1>
+      <h5>{{desc7}}</h5>
+
+
+    </div>
+    <div class="carousel-item">
+      <img src="{{news8}}" class="d-block w-100" height="380" alt="...">
+      <h1>{{title8}}</h1>
+      <h5>{{desc8}}</h5>
+    </div>
+    <div class="carousel-item">
+      <img src="{{news9}}" class="d-block w-100" height="380" alt="...">
+      <h1>{{title9}}</h1>
+      <h5>{{desc9}}</h5>
+    </div>
+    <div class="carousel-item">
+      <img src="{{news10}}" class="d-block w-100" height="380" alt="...">
+      <h1>{{title10}}</h1>
+      <h5>{{desc10}}</h5>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+<br>
+<div class="container">
+<div class="card">
+  <h5 class="card-header">BBC News</h5>
+  <div class="card-body">
+    <h5 class="card-title">{{title1}}</h5>
+    <p class="card-text">{{desc1}}</p>
+    <a href="speakme" class="btn btn-primary">Listen</a>
+    <audio controls autoplay muted>
+      <source src="horse.ogg" type="audio/ogg">
+      <source src="horse.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+  </div>
+</div>
+<br>
+  <div class="card">
+  <h5 class="card-header">BBC News</h5>
+  <div class="card-body">
+    <h5 class="card-title">{{title2}}</h5>
+    <p class="card-text">{{desc2}}</p>
+    <a href="speakme" class="btn btn-primary">Listen</a>
+    <audio controls autoplay muted>
+      <source src="horse.ogg" type="audio/ogg">
+      <source src="horse.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+  </div>
+</div>
+<br>
+  <div class="card">
+  <h5 class="card-header">BBC News</h5>
+  <div class="card-body">
+    <h5 class="card-title">{{title3}}</h5>
+    <p class="card-text">{{desc3}}</p>
+    <a href="speakme" class="btn btn-primary">Listen</a>
+    <audio controls autoplay muted>
+      <source src="horse.ogg" type="audio/ogg">
+      <source src="horse.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+  </div>
+</div>
+<br>
+  <div class="card">
+  <h5 class="card-header">BBC News</h5>
+  <div class="card-body">
+    <h5 class="card-title">{{title4}}</h5>
+    <p class="card-text">{{desc4}}</p>
+    <a href="speakme" class="btn btn-primary">Listen</a>
+    <audio controls autoplay muted>
+      <source src="horse.ogg" type="audio/ogg">
+      <source src="horse.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+  </div>
+</div>
+<br>
+  <div class="card">
+  <h5 class="card-header">BBC News</h5>
+  <div class="card-body">
+    <h5 class="card-title">{{title5}}</h5>
+    <p class="card-text">{{desc5}}</p>
+    <a href="speakme" class="btn btn-primary">Listen</a>
+    <audio controls autoplay muted>
+      <source src="horse.ogg" type="audio/ogg">
+      <source src="horse.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+  </div>
+</div>
+<br>
+  <div class="card">
+  <h5 class="card-header">BBC News</h5>
+  <div class="card-body">
+    <h5 class="card-title">{{title6}}</h5>
+    <p class="card-text">{{desc6}}</p>
+    <a href="speakme" class="btn btn-primary">Listen</a>
+    <audio controls autoplay muted>
+      <source src="horse.ogg" type="audio/ogg">
+      <source src="horse.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+  </div>
+</div>
+<br>
+  <div class="card">
+  <h5 class="card-header">BBC News</h5>
+  <div class="card-body">
+    <h5 class="card-title">{{title7}}</h5>
+    <p class="card-text">{{desc7}}</p>
+    <a href="speakme" class="btn btn-primary">Listen</a>
+    <audio controls autoplay muted>
+      <source src="horse.ogg" type="audio/ogg">
+      <source src="horse.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+  </div>
+</div>
+<br>
+  <div class="card">
+  <h5 class="card-header">BBC News</h5>
+  <div class="card-body">
+    <h5 class="card-title">{{title8}}</h5>
+    <p class="card-text">{{desc8}}</p>
+    <a href="speakme" class="btn btn-primary">Listen</a>
+    <audio controls autoplay muted>
+      <source src="horse.ogg" type="audio/ogg">
+      <source src="horse.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+  </div>
+</div>
+<br>
+  <div class="card">
+  <h5 class="card-header">BBC News</h5>
+  <div class="card-body">
+    <h5 class="card-title">{{title9}}</h5>
+    <p class="card-text">{{desc9}}</p>
+    <a href="speakme" class="btn btn-primary">Listen</a>
+    <audio controls autoplay muted>
+      <source src="horse.ogg" type="audio/ogg">
+      <source src="horse.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+  </div>
+</div>
+<br>
+  <div class="card">
+  <h5 class="card-header">BBC News</h5>
+  <div class="card-body">
+    <h5 class="card-title">{{title10}}</h5>
+    <p class="card-text">{{desc10}}</p>
+    <a href="speakme" class="btn btn-primary">Listen</a>
+    <audio controls autoplay muted>
+      <source src="horse.ogg" type="audio/ogg">
+      <source src="horse.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+  </div>
+</div>
+
+</div>
+
+
+{% endblock %}
